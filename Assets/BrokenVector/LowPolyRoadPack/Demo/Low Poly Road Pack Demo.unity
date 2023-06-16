@@ -46441,6 +46441,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1654096758707785406}
+  - component: {fileID: 1654096758707785408}
   m_Layer: 0
   m_Name: Sounds
   m_TagString: Untagged
@@ -46448,6 +46449,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1654096758707785408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654096758707785407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81543e72b6a8a564089cdd829bda28b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  car: {fileID: 2443162434849697152}
+  carEngineSound: {fileID: 1654096758260057008}
+  tireScreechSound: {fileID: 1654096758294880452}
 --- !u!4 &1702800218610359531
 Transform:
   m_ObjectHideFlags: 0
@@ -46517,7 +46533,6 @@ GameObject:
   - component: {fileID: 7948215544878041379}
   - component: {fileID: 7948215544878041377}
   - component: {fileID: 7948215544878041383}
-  - component: {fileID: 7948215544878041376}
   m_Layer: 0
   m_Name: Car
   m_TagString: Untagged
@@ -48338,20 +48353,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &7948215544878041376
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2443162434849697152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81543e72b6a8a564089cdd829bda28b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  carEngineSound: {fileID: 1654096758260057008}
-  tireScreechSound: {fileID: 1654096758294880452}
 --- !u!114 &7948215544878041377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48370,8 +48371,8 @@ MonoBehaviour:
   brakeForce: 450
   decelerationMultiplier: 2
   handbrakeDriftMultiplier: 5
-  maxSteeringAngle: 35
-  steeringSpeed: 5
+  maxSteeringAngle: 22
+  steeringSpeed: 2
   frontLeftMesh: {fileID: 5839447533954321138}
   frontLeftCollider: {fileID: 3898684755843489263}
   frontRightMesh: {fileID: 572154394894374709}
